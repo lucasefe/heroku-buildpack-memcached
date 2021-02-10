@@ -17,13 +17,13 @@ BIN_DIR="$(dirname $(dirname $0))/bin"
 
 echo "$indent_arrow Adding memcached binary into app/bin"
 mkdir -p "$BUILD_DIR/bin"
-tar -xzf "$BIN_DIR/memcached.tgz" -C "$BUILD_DIR/bin"
-chmod +x "$BUILD_DIR/bin/memcached"
-
+# tar -xzf "$BIN_DIR/memcached.tgz" -C "$BUILD_DIR/bin"
+# chmod +x "$BUILD_DIR/bin/memcached"
+# 
 echo "$indent_arrow Copying the start-memcached script into app/bin"
 mkdir -p "$BUILD_DIR/bin"
 cp "$BIN_DIR/start-memcached" "$BUILD_DIR/bin"
 chmod +x $BUILD_DIR/bin/start-memcached
-
+# 
 echo "$indent_arrow memcached done"
 
